@@ -84,31 +84,6 @@ Pods/
 
 ## Add Podfile
 
-### Old Way
-
-- Open terminal
-- Enter command `cd ~/path/to/your/project`
-- Enter command `atom Podfile`
-> This is case SENSITIVE
-
-#### Source
-
-Add a source to the top of your `Podfile`.  If you're unsure what this should be, it should be this:
-
-`source 'https://github.com/CocoaPods/Specs.git'`
-
-#### Platform
-
-Specifying a platform is unncessary, but highly encouraged.  The syntax is:
-
-`platform :<#platform#>, '<#version#>'`
-
-Example:
-
-`platform :ios, '7.0'`
-
-### New Way
-
 - Open terminal
 - Enter command `pod init`
 - Uncomment the platform line to specify a platform _(ex._ `platform :ios, '8.0'`_)_
