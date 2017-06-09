@@ -7,13 +7,19 @@
 //
 
 import UIKit
+import SwiftGifOrigin
+import MarqueeLabel
 
 class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var marLabel: MarqueeLabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        marLabel.animationCurve = UIViewAnimationCurve.easeInOut
+        
     }
 }
 
