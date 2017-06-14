@@ -29,6 +29,9 @@ class ViewController: UIViewController {
         
         // A buffer (offset) between the leading edge of the label text and the label frame.
         mLabel.leadingBuffer = 10
+        
+        // scroll rate - scrolls at 30 pixels per second
+        mLabel.speed = .duration(30.0)
     }
 }
 
