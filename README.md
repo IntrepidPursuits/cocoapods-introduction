@@ -174,11 +174,10 @@ Make sure you know how to use cocoapods! To test this knowledge, add a pod to th
 ### Your Task:
 1. Add this pod to your project: https://github.com/cbpowell/MarqueeLabel
 2. Add a marquee'd label to the primary View Controller such that the following is true
- * The marquee's label’s text should begin flush to the left side of the label
  * The marquee scroll should wrap around to its original position after scrolling through the text (traveling left)
  * The marquee's animation curve is EASE IN / EASE OUT
  * The marquee scrolls at 30 pixels per second
  * The marquee will only scroll after being tapped by the user
  * The marquee's text is as follows: "According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible."
  * There is a 10 pixel buffer between the last character in the label and the first one
-3. Open up a Pull Request to be reviewed by your instructor
+3. Open up a Pull Request to be reviewed by your instructor, **But Do Not Merge It Into This Repo**
