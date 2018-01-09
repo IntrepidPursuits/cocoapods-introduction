@@ -1,5 +1,5 @@
 PODS:
-  - MarqueeLabel/Swift (3.1.4)
+  - MarqueeLabel/Swift (3.0.1)
   - SwiftGifOrigin (1.6.1)
 
 DEPENDENCIES:
@@ -7,7 +7,7 @@ DEPENDENCIES:
   - SwiftGifOrigin (= 1.6.1)
 
 SPEC CHECKSUMS:
-  MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
+  MarqueeLabel: 80ba85d2b76a9f5fa6c13de337db80bcd94feb1d
   SwiftGifOrigin: d6679d3ebe9df2e049a84bc52582635107b581f6
 
 PODFILE CHECKSUM: 8b55586976a8e863dc115c5ea1e3797b928e447f

@@ -35,9 +35,20 @@
                                     </mask>
                                 </variation>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhC-nb-T0c" customClass="MarqueeLabel" customModule="MarqueeLabel">
+                                <rect key="frame" x="46" y="130" width="283" height="21"/>
+                                <string key="text">According to all known laws of aviation, there is no way a bee should be able to fly. Its wings are too small to get its fat little body off the ground. The bee, of course, flies anyway because bees don't care what humans think is impossible. </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.87058823529999996" green="0.8980392157" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="nhC-nb-T0c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="46" id="9WK-ls-j07"/>
+                            <constraint firstItem="nhC-nb-T0c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9cM-EZ-ccH"/>
+                            <constraint firstAttribute="trailing" secondItem="nhC-nb-T0c" secondAttribute="trailing" constant="46" id="DmG-gU-o7a"/>
+                            <constraint firstItem="Auh-sW-xxD" firstAttribute="top" secondItem="nhC-nb-T0c" secondAttribute="bottom" constant="41" id="Hx4-Wd-lW6"/>
                             <constraint firstItem="Auh-sW-xxD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="J9O-cI-JBg"/>
                             <constraint firstItem="Auh-sW-xxD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="MkA-gU-Qs7"/>
                             <constraint firstItem="Auh-sW-xxD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x2p-H8-JDs"/>
@@ -45,10 +56,12 @@
                     </view>
                     <connections>
                         <outlet property="imageView" destination="Auh-sW-xxD" id="av1-rE-ezc"/>
+                        <outlet property="marqueeLabel" destination="nhC-nb-T0c" id="fWi-LY-eti"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
