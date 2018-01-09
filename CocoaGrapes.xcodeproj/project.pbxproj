@@ -13,6 +13,7 @@
 		074558371CF89EDC00399215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074558361CF89EDC00399215 /* Assets.xcassets */; };
 		0745583A1CF89EDC00399215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074558381CF89EDC00399215 /* LaunchScreen.storyboard */; };
 		074558431CF8B42E00399215 /* dankgrapes.gif in Resources */ = {isa = PBXBuildFile; fileRef = 074558421CF8B42E00399215 /* dankgrapes.gif */; };
+		D63F4875129FFF29D5841D63 /* Pods_CocoaGrapes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7793C1385550337D1359801E /* Pods_CocoaGrapes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		074558391CF89EDC00399215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0745583B1CF89EDC00399215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074558421CF8B42E00399215 /* dankgrapes.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dankgrapes.gif; sourceTree = "<group>"; };
+		45990B6C5D1DBD13737D3D71 /* Pods-CocoaGrapes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaGrapes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes.debug.xcconfig"; sourceTree = "<group>"; };
+		7793C1385550337D1359801E /* Pods_CocoaGrapes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CocoaGrapes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2BF5A5B6843B55397D68BF /* Pods-CocoaGrapes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CocoaGrapes.release.xcconfig"; path = "Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63F4875129FFF29D5841D63 /* Pods_CocoaGrapes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				0745582E1CF89EDC00399215 /* CocoaGrapes */,
 				0745582D1CF89EDC00399215 /* Products */,
+				D9C866DC9A238CA024DF1EC5 /* Pods */,
+				ACEE3FE03BB68A2C80FE4ED7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,6 +82,23 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		ACEE3FE03BB68A2C80FE4ED7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7793C1385550337D1359801E /* Pods_CocoaGrapes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9C866DC9A238CA024DF1EC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				45990B6C5D1DBD13737D3D71 /* Pods-CocoaGrapes.debug.xcconfig */,
+				AE2BF5A5B6843B55397D68BF /* Pods-CocoaGrapes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -82,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0745583E1CF89EDC00399215 /* Build configuration list for PBXNativeTarget "CocoaGrapes" */;
 			buildPhases = (
+				A7D1040A301B4DFE32AB6D5D /* [CP] Check Pods Manifest.lock */,
 				074558281CF89EDC00399215 /* Sources */,
 				074558291CF89EDC00399215 /* Frameworks */,
 				0745582A1CF89EDC00399215 /* Resources */,
+				06559D3CA50B0339F4FC3789 /* [CP] Embed Pods Frameworks */,
+				076E03A0226E6D084EE04015 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -142,6 +169,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06559D3CA50B0339F4FC3789 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftGifOrigin/SwiftGifOrigin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftGifOrigin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		076E03A0226E6D084EE04015 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CocoaGrapes/Pods-CocoaGrapes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7D1040A301B4DFE32AB6D5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CocoaGrapes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		074558281CF89EDC00399215 /* Sources */ = {
@@ -260,6 +343,7 @@
 		};
 		0745583F1CF89EDC00399215 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45990B6C5D1DBD13737D3D71 /* Pods-CocoaGrapes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CocoaGrapes/Info.plist;
@@ -273,6 +357,7 @@
 		};
 		074558401CF89EDC00399215 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE2BF5A5B6843B55397D68BF /* Pods-CocoaGrapes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CocoaGrapes/Info.plist;
