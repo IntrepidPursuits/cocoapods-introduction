@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftGifOrigin
 
 class ViewController: UIViewController {
 
@@ -14,6 +15,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let theDankness = UIImage.gif(name: "dankgrapes")
+        imageView.image = theDankness
     }
 }
 
